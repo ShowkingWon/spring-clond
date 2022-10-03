@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-client-a
+
+  cloud:
+    inetutils:
+      ignored-interfaces: 'VMware Virtual Ethernet Adapter for VMnet1,VMware Virtual Ethernet Adapter for VMnet8'
+      timeout-seconds: 10
+
+#端口号
+server:
+  port: 8001
+
+#eureka配置信息
+eureka:
+  client:
+    #服务ָ注册中心地址
+    serviceUrl:
+      ## 单节点服务中心模式
+      ## defaultZone: http://localhost:8761/eureka/
+      ## 高可用服务中心模式
+      defaultZone: http://peer1:1001/eureka/,http://peer2:1002/eureka/,http://peer3:1003/eureka/

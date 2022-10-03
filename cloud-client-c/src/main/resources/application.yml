@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-client-c
+
+  cloud:
+    inetutils:
+      ignored-interfaces: 'VMware Virtual Ethernet Adapter for VMnet1,VMware Virtual Ethernet Adapter for VMnet8'
+
+#端口号
+server:
+  port: 8003
+
+#eureka配置信息
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud" />
+        <module name="cloud-client-a" />
+        <module name="ribbon-consuemr" />
+        <module name="provider-order" />
+        <module name="eureka-server-a" />
+        <module name="cloud-client-c" />
+        <module name="cloud-server-first" />
+        <module name="cloud-client-b" />
+        <module name="eureka-server-b" />
+        <module name="eureka-server-c" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-client-a" target="8" />
+      <module name="cloud-client-b" target="8" />
+      <module name="cloud-client-c" target="8" />
+      <module name="cloud-server-first" target="8" />
+      <module name="eureka-server-a" target="1.8" />
+      <module name="eureka-server-b" target="1.8" />
+      <module name="eureka-server-c" target="1.8" />
+      <module name="provider-order" target="1.8" />
+      <module name="ribbon-consuemr" target="1.8" />
+      <module name="spring-cloud" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-client-a" options="-parameters" />
+      <module name="cloud-client-b" options="-parameters" />
+      <module name="cloud-client-c" options="-parameters" />
+      <module name="cloud-server-first" options="-parameters" />
+      <module name="eureka-server-a" options="-parameters" />
+      <module name="eureka-server-b" options="-parameters" />
+      <module name="eureka-server-c" options="-parameters" />
+      <module name="provider-order" options="-parameters" />
+      <module name="ribbon-consuemr" options="-parameters" />
+      <module name="spring-cloud" options="-parameters" />
+    </option>
+  </component>
+</project>
